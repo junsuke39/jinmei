@@ -1,7 +1,9 @@
-<%= form_tag search_path, remote: true do %>
+<%= form_tag search_path, remote: true, class: "form-inline" do %>
+<div class="form-group">
+  <%= text_field_tag "text", "", class: "form-control", placeholder: "人名（漢字またはひらがな）" %>
+  <%= submit_tag "検索", class: "btn btn-primary" %>
+</div>
 <div>
-  <%= text_field_tag "text" %>
-  <%= submit_tag %>
 </div>
 <div id="result"></div>
 <% end %>

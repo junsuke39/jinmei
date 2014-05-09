@@ -1,4 +1,9 @@
-<table>
+<% if @dicts.nil? %>
+<div class="message">検索する人名を入力</div>
+<% elsif @dicts.size == 0 %>
+<div class="message">結果0件</div>
+<% else %>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>漢字</th>
@@ -16,3 +21,4 @@
     <% end %>
   </tbody>
 </table>
+<% end  %>
