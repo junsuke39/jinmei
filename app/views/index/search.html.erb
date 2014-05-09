@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>漢字</th>
+      <th>ひらがな</th>
+      <th>付加情報</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @dicts.each do |dict| %>
+    <tr>
+      <td><%= dict.kanji %></td>
+      <td><%= dict.hiragana %></td>
+      <td><%= dict.desc %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

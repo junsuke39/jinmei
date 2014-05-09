@@ -1,0 +1,7 @@
+<%= form_tag search_path, remote: true do %>
+<div>
+  <%= text_field_tag "text" %>
+  <%= submit_tag %>
+</div>
+<div id="result"></div>
+<% end %>
